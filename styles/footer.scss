@@ -1,0 +1,93 @@
+footer {
+    padding: 20px;
+    .footer_container {
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .footer_left_block {
+            background-color: dimgray;
+            width: 32%;
+            padding: 20px;
+            
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    list-style: none;
+                    padding: 5px;
+                    width: 45%;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+
+        .footer_center_block {
+            background-color: dimgray;
+            width: 32%;
+            padding: 20px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    padding: 5px;
+                    color: white;
+                }
+            }
+        }
+
+        .footer_right_block {
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .top_right_block {
+                background-color: dimgray;
+                height: 45%;
+            }
+
+            .bottom_right_block {
+                background-color: dimgray;
+                height: 45%;
+            }
+
+        }
+
+        @media (max-width: 769px) {
+            flex-direction: column;
+            align-items: center;
+
+            .footer_left_block {
+                max-width: 300px;
+                width: 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer_center_block {
+                max-width: 300px;
+                width: 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer_right_block {
+                max-width: 300px;
+                width: 100%;
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}

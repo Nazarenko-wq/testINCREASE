@@ -1,0 +1,121 @@
+.block {
+  display: block;
+}
+
+main {
+  padding: 20px;
+}
+main .main_content {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .main_content .burger {
+  display: none;
+}
+main .main_content .burger img {
+  cursor: pointer;
+}
+main .main_content .left {
+  max-width: 250px;
+  width: 100%;
+  background-color: dimgray;
+  padding: 10px;
+  height: 370px;
+}
+main .main_content .left .left_block_title {
+  color: white;
+}
+main .main_content .left menu {
+  padding: 0;
+}
+main .main_content .left menu ul {
+  padding: 0;
+}
+main .main_content .left menu ul li {
+  list-style: none;
+  transition: all 0.5s;
+  padding: 5px;
+  display: inline-block;
+}
+main .main_content .left menu ul li:hover {
+  transform: scale(1.1);
+}
+main .main_content .left menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+main .main_content .center {
+  width: 100%;
+}
+main .main_content .center .description_block {
+  padding: 20px;
+  background-color: rgb(202, 195, 195);
+}
+main .main_content .center .description_block ul {
+  margin-left: 30px;
+}
+main .main_content .center .items {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+main .main_content .center .items .item {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(202, 195, 195);
+}
+main .main_content .center .about_us {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+main .main_content .center .about_us .about_item {
+  width: 49%;
+  box-sizing: border-box;
+  background-color: rgb(202, 195, 195);
+  padding: 20px;
+  line-height: 30px;
+}
+@media (max-width: 769px) {
+  main .main_content {
+    position: relative;
+  }
+  main .main_content .burger {
+    display: block;
+  }
+  main .main_content .left {
+    position: fixed;
+    left: -2000px;
+    transition: all 1s;
+    z-index: 10;
+  }
+  main .main_content .center .description_block h1 {
+    font-weight: 20px;
+  }
+  main .main_content .center .items {
+    justify-content: center;
+  }
+  main .main_content .center .items .item {
+    max-width: 250px;
+    height: 250px;
+  }
+  main .main_content .center .about_us {
+    flex-direction: column;
+  }
+  main .main_content .center .about_us .about_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main hr {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
